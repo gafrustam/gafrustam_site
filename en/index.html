@@ -4,13 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rustam Gafarov — Programming & Mathematics Tutor</title>
-  <meta name="description" content="I prepare adults for algorithmic coding interviews and teach children olympiad mathematics and programming. 15 years of experience. Contact: WhatsApp +62 822-6644-3901">
+  <meta name="description" content="I prepare adults for algorithmic coding interviews and teach children olympiad mathematics and programming. 15 years of experience. Contact via WhatsApp or Telegram.">
   <meta property="og:title" content="Rustam Gafarov — Programming & Mathematics Tutor">
   <meta property="og:description" content="Algorithmic interviews, olympiad math and programming. 15 years of experience.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://cdn.profi.ru/xfiles/pfiles/5d5d34dac2af4e558c5ba38afb766822.jpg-profi_a34-320.jpg">
   <meta name="color-scheme" content="light dark">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%231a2b6d'/%3E%3Ctext x='50' y='57' font-size='48' text-anchor='middle' fill='white' font-family='system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, sans-serif'%3ER%3C/text%3E%3C/svg%3E">
   <style>
     :root{ --bg:#0b1020; --panel:#101935; --accent:#4f7cff; --text:#e9eefc; --muted:#a6b0cf; --shadow:0 10px 30px rgba(0,0,0,.25); --radius:18px; --radius-sm:12px }
     @media (prefers-color-scheme: light){ :root{ --bg:#f7f8fc; --panel:#fff; --text:#0f1732; --muted:#55607a; --shadow:0 10px 30px rgba(16,25,53,.08) } }
@@ -32,11 +31,10 @@
     h1{margin:0; font-size:clamp(26px, 4.2vw, 42px); line-height:1.12}
     .title{display:grid; grid-template-columns:auto 1fr; gap:16px; align-items:center; margin:0 0 12px}
     .avatar{width:128px; height:128px; border-radius:18px; box-shadow:var(--shadow); object-fit:cover}
-    @media (max-width:520px){ .avatar{width:96px; height:96px} }
+    @media (max-width:600px){ .title{grid-template-columns:1fr} .avatar{width:140px; height:140px; border-radius:50%} }
 
     .lead{margin:0 0 16px; color:var(--muted)}
 
-    /* Intro list like on Profi: one line per item with an em dash */
     .intro{list-style:none; padding:0; margin:0 0 16px}
     .intro li{margin:6px 0; line-height:1.55}
     .intro li::before{content:'— '; color:var(--text); opacity:.9}
@@ -45,11 +43,11 @@
     .point{display:flex; gap:12px; align-items:flex-start}
     .bullet{width:32px; height:32px; border-radius:10px; background:rgba(79,124,255,.18); display:grid; place-items:center; font-size:18px}
 
-    .section{margin:36px 0}
+    .section{margin:24px 0}
     .muted{color:var(--muted)}
 
-    .video-card{display:flex; align-items:center; gap:12px; padding:16px 18px; border-radius:16px; border:1px solid rgba(255,255,255,.12); background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.01)); text-decoration:none; font-weight:700}
-    .video-play{width:40px; height:40px; border-radius:50%; display:grid; place-items:center; background:var(--accent); color:#fff; box-shadow:var(--shadow)}
+    .video-card{display:flex; align-items:center; gap:12px; padding:12px 16px; border-radius:14px; border:1px solid rgba(255,255,255,.12); background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.01)); text-decoration:none; font-weight:700; box-shadow:var(--shadow); width:fit-content; margin:0 auto}
+    .video-play{width:32px; height:32px; border-radius:50%; display:grid; place-items:center; background:var(--accent); color:#fff; box-shadow:var(--shadow)}
 
     .list{margin:0; padding-left:18px}
     .list li{margin:6px 0}
@@ -60,6 +58,8 @@
     .review .stars{letter-spacing:.12em}
 
     .footer{margin:28px 0 16px; text-align:center; color:var(--muted); font-size:14px}
+
+    .card.narrow{max-width:920px; margin:0 auto}
   </style>
 </head>
 <body>
@@ -83,7 +83,6 @@
       </div>
       <p class="lead">I prepare adults for algorithmic coding interviews and teach children olympiad mathematics and programming 🧑‍🏫</p>
 
-      <!-- Intro like on Profi: em-dash lines -->
       <ul class="intro" role="list">
         <li role="listitem">🌏 In Russian or English</li>
         <li role="listitem">❤️ I love teaching and see great value in it</li>
@@ -124,7 +123,7 @@
   </section>
 
   <section class="container section" id="edu">
-    <div class="card panel">
+    <div class="card panel narrow">
       <h2 style="margin-top:0">Education</h2>
       <ul class="list muted">
         <li>Kazan Federal University, CMC — BSc • 2008–2012</li>
@@ -135,7 +134,7 @@
   </section>
 
   <section class="container section" id="exp">
-    <div class="card panel">
+    <div class="card panel narrow">
       <h2 style="margin-top:0">Experience</h2>
       <ul class="list muted">
         <li>MIPT — TA & lecturer (algorithms, C, C++) • 2013–2016</li>
@@ -147,7 +146,7 @@
   </section>
 
   <section class="container section" id="reviews">
-    <div class="card panel">
+    <div class="card panel narrow">
       <h2 style="margin-top:0">Reviews</h2>
       <div class="reviews">
         <div class="review"><div class="who">Hasan • Java training • September 4, 2025</div><div class="stars">★★★★★</div><p class="muted">Excellent!</p></div>
@@ -160,8 +159,8 @@
     </div>
   </section>
 
-  <section class="container section">
-    <div class="card panel">
+  <section class="container section" id="start">
+    <div class="card panel narrow">
       <h2 style="margin-top:0">How to start</h2>
       <ol class="muted" style="margin:0; padding-left:18px">
         <li>Text me on WhatsApp: <a href="https://wa.me/6282266443901" target="_blank" rel="noopener">+62 822‑6644‑3901</a> or on Telegram: <a href="https://t.me/gafrustam" target="_blank" rel="noopener">@gafrustam</a>.</li>
