@@ -45,11 +45,11 @@
     .point{display:flex; gap:12px; align-items:flex-start}
     .bullet{width:32px; height:32px; border-radius:10px; background:rgba(79,124,255,.18); display:grid; place-items:center; font-size:18px}
 
-    .section{margin:36px 0}
+    .section{margin:24px 0}
     .muted{color:var(--muted)}
 
-    .video-card{display:flex; align-items:center; gap:12px; padding:16px 18px; border-radius:16px; border:1px solid rgba(255,255,255,.12); background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.01)); text-decoration:none; font-weight:700}
-    .video-play{width:40px; height:40px; border-radius:50%; display:grid; place-items:center; background:var(--accent); color:#fff; box-shadow:var(--shadow)}
+    .video-card{display:flex; align-items:center; gap:12px; padding:12px 16px; border-radius:14px; border:1px solid rgba(255,255,255,.12); background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.01)); text-decoration:none; font-weight:700; box-shadow:var(--shadow); transition:transform .08s ease; width:fit-content; margin:0 auto;}
+    .video-play{width:32px; height:32px; border-radius:50%; display:grid; place-items:center; background:var(--accent); color:#fff; box-shadow:var(--shadow)}
 
     .list{margin:0; padding-left:18px}
     .list li{margin:6px 0}
@@ -60,6 +60,14 @@
     .review .stars{letter-spacing:.12em}
 
     .footer{margin:28px 0 16px; text-align:center; color:var(--muted); font-size:14px}
+      /* Узкие центрированные карточки для одиночных секций */
+    .card.narrow{max-width:920px; margin:0 auto}
+
+    /* Мобильный: фото не узкое, кладём над заголовком */
+    @media (max-width:600px){
+      .title{grid-template-columns:1fr}
+      .avatar{width:140px; height:140px; border-radius:50%}
+    }
   </style>
 </head>
 <body>
@@ -122,7 +130,7 @@
   </section>
 
   <section class="container section" id="edu">
-    <div class="card panel">
+    <div class="card panel narrow">
       <h2 style="margin-top:0">Образование</h2>
       <ul class="list muted">
         <li>КФУ ВМК, бакалавриат • 2008–2012</li>
@@ -133,7 +141,7 @@
   </section>
 
   <section class="container section" id="exp">
-    <div class="card panel">
+    <div class="card panel narrow">
       <h2 style="margin-top:0">Опыт</h2>
       <ul class="list muted">
         <li>МФТИ — семинарист и лектор по алгоритмам, C, C++ • 2013–2016</li>
@@ -145,7 +153,7 @@
   </section>
 
   <section class="container section" id="reviews">
-    <div class="card panel">
+    <div class="card panel narrow">
       <h2 style="margin-top:0">Отзывы (Profi.ru)</h2>
       <div class="reviews">
         <div class="review"><div class="who">Хасан • Обучение Java • 4 сентября 2025</div><div class="stars">★★★★★</div><p class="muted">Отлично!</p></div>
@@ -159,7 +167,7 @@
   </section>
 
   <section class="container section">
-    <div class="card panel">
+    <div class="card panel narrow">
       <h2 style="margin-top:0">Как начать</h2>
       <ol class="muted" style="margin:0; padding-left:18px">
         <li>Напишите в Telegram: <a href="https://t.me/gafrustam" target="_blank" rel="noopener">@gafrustam</a>.</li>
