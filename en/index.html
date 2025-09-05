@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rustam Gafarov — Programming & Mathematics Tutor</title>
+  <meta name="description" content="I prepare adults for algorithmic coding interviews and teach children olympiad mathematics and programming. 15 years of experience. Contact: WhatsApp +62 822-6644-3901">
+  <meta property="og:title" content="Rustam Gafarov — Programming & Mathematics Tutor">
+  <meta property="og:description" content="Algorithmic interviews, olympiad math and programming. 15 years of experience.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://cdn.profi.ru/xfiles/pfiles/5d5d34dac2af4e558c5ba38afb766822.jpg-profi_a34-320.jpg">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%231a2b6d'/%3E%3Ctext x='50' y='57' font-size='48' text-anchor='middle' fill='white' font-family='system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, sans-serif'%3ER%3C/text%3E%3C/svg%3E">
+  <style>
+    :root{ --bg:#0b1020; --panel:#101935; --accent:#4f7cff; --text:#e9eefc; --muted:#a6b0cf; --shadow:0 10px 30px rgba(0,0,0,.25); --radius:18px; --radius-sm:12px }
+    @media (prefers-color-scheme: light){ :root{ --bg:#f7f8fc; --panel:#fff; --text:#0f1732; --muted:#55607a; --shadow:0 10px 30px rgba(16,25,53,.08) } }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0; font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica Neue,Arial,sans-serif; color:var(--text); background:radial-gradient(1200px 600px at 80% -10%, rgba(79,124,255,.15), transparent 60%), radial-gradient(900px 500px at 10% 110%, rgba(79,124,255,.18), transparent 60%), var(--bg)}
+    img{max-width:100%; height:auto; display:block}
+    a{color:inherit}
+    .container{max-width:1080px; margin:0 auto; padding:24px}
+    .nav{display:flex; align-items:center; justify-content:space-between; gap:12px}
+    .brand{display:flex; align-items:center; gap:12px; text-decoration:none; font-weight:700}
+    .brand-logo{width:36px; height:36px; border-radius:50%; background:var(--accent); display:grid; place-items:center; color:#fff; box-shadow:var(--shadow)}
+    .btn{display:inline-block; padding:12px 18px; border-radius:999px; background:var(--accent); color:#fff; text-decoration:none; font-weight:700; box-shadow:var(--shadow); transition:transform .08s ease}
+    .btn:active{transform:translateY(1px)}
+
+    .hero{margin-top:20px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); backdrop-filter:saturate(140%) blur(8px); border:1px solid rgba(255,255,255,.12); border-radius:var(--radius); box-shadow:var(--shadow)}
+    .panel{padding:24px}
+    h1{margin:0; font-size:clamp(26px, 4.2vw, 42px); line-height:1.12}
+    .title{display:grid; grid-template-columns:auto 1fr; gap:16px; align-items:center; margin:0 0 12px}
+    .avatar{width:128px; height:128px; border-radius:18px; box-shadow:var(--shadow); object-fit:cover}
+    @media (max-width:520px){ .avatar{width:96px; height:96px} }
+
+    .lead{margin:0 0 16px; color:var(--muted)}
+
+    /* Intro list like on Profi: one line per item with an em dash */
+    .intro{list-style:none; padding:0; margin:0 0 16px}
+    .intro li{margin:6px 0; line-height:1.55}
+    .intro li::before{content:'— '; color:var(--text); opacity:.9}
+
+    .points{display:grid; gap:12px; margin:16px 0 18px}
+    .point{display:flex; gap:12px; align-items:flex-start}
+    .bullet{width:32px; height:32px; border-radius:10px; background:rgba(79,124,255,.18); display:grid; place-items:center; font-size:18px}
+
+    .section{margin:36px 0}
+    .muted{color:var(--muted)}
+
+    .video-card{display:flex; align-items:center; gap:12px; padding:16px 18px; border-radius:16px; border:1px solid rgba(255,255,255,.12); background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.01)); text-decoration:none; font-weight:700}
+    .video-play{width:40px; height:40px; border-radius:50%; display:grid; place-items:center; background:var(--accent); color:#fff; box-shadow:var(--shadow)}
+
+    .list{margin:0; padding-left:18px}
+    .list li{margin:6px 0}
+
+    .reviews{display:grid; gap:16px}
+    .review{padding:18px; border-radius:var(--radius-sm); border:1px solid rgba(255,255,255,.12); background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01))}
+    .review .who{font-weight:700}
+    .review .stars{letter-spacing:.12em}
+
+    .footer{margin:28px 0 16px; text-align:center; color:var(--muted); font-size:14px}
+  </style>
+</head>
+<body>
+  <header class="container nav">
+    <a class="brand" href="#top" aria-label="Home">
+      <span class="brand-logo">R</span>
+      <span>Rustam Gafarov</span>
+    </a>
+    <nav>
+      <a href="https://gafrustam.ru" target="_blank" rel="noopener" class="muted" style="margin-right:12px">Русский</a>
+      <a class="btn" href="https://wa.me/6282266443901" rel="noopener" target="_blank">WhatsApp</a>
+      <a class="btn" href="https://t.me/gafrustam" rel="noopener" target="_blank" style="margin-left:8px">Telegram</a>
+    </nav>
+  </header>
+
+  <main class="container hero" id="top">
+    <section class="card panel" aria-labelledby="headline">
+      <div class="title">
+        <img class="avatar" src="/assets/rustam.jpg" alt="Rustam Gafarov">
+        <h1 id="headline">Rustam Gafarov, programming & mathematics tutor</h1>
+      </div>
+      <p class="lead">I prepare adults for algorithmic coding interviews and teach children olympiad mathematics and programming 🧑‍🏫</p>
+
+      <!-- Intro like on Profi: em-dash lines -->
+      <ul class="intro" role="list">
+        <li role="listitem">🌏 In Russian or English</li>
+        <li role="listitem">❤️ I love teaching and see great value in it</li>
+        <li role="listitem">👥 I work as equals and build trust with my students</li>
+        <li role="listitem">🏆 From school olympiads to work at Yandex, MIPT, Innopolis</li>
+        <li role="listitem">📚 15 years of teaching</li>
+        <li role="listitem">📱 Author of a <a href="https://t.me/uchumyslit" target="_blank" rel="noopener">Telegram channel</a></li>
+      </ul>
+
+      <div class="points" role="list">
+        <div class="point" role="listitem"><span class="bullet" aria-hidden="true">🎯</span><div><b>For adults</b>: algorithms & data structures, preparation for <b>algorithmic interviews</b>.</div></div>
+        <div class="point" role="listitem"><span class="bullet" aria-hidden="true">🧩</span><div>In 10–15 lessons you'll master core interview patterns: structure your code, minimize mistakes, and design algorithmically efficient solutions.</div></div>
+        <div class="point" role="listitem"><span class="bullet" aria-hidden="true">🚀</span><div>With more time, we'll cover a full algorithms course and tackle tougher problems, up to <i>LeetCode Hard</i>.</div></div>
+        <div class="point" role="listitem"><span class="bullet" aria-hidden="true">🏆</span><div>Success stories: job offers after prep, improved school grades, reaching top olympiad levels.</div></div>
+        <div class="point" role="listitem"><span class="bullet" aria-hidden="true">📐</span><div><b>Math for adults</b>: I teach mathematical thinking — unclear things become clear, and you'll learn to prove statements yourself.</div></div>
+        <div class="point" role="listitem"><span class="bullet" aria-hidden="true">👦</span><div><b>For kids</b>: we start with Scratch, then move to Python, solve algorithmic problems, build games and Telegram bots. For national olympiads we study C++.</div></div>
+      </div>
+
+      <div class="points" role="list" aria-label="Philosophy">
+        <div class="point" role="listitem"><span class="bullet" aria-hidden="true">💡</span><div>Programming is valuable because it develops thinking — even if you never write code professionally.</div></div>
+        <div class="point" role="listitem"><span class="bullet" aria-hidden="true">🔥</span><div>I motivate and inspire, create a structure for regular study, and share hands‑on experience.</div></div>
+        <div class="point" role="listitem"><span class="bullet" aria-hidden="true">🧭</span><div>I guide gently so students invent solutions themselves.</div></div>
+        <div class="point" role="listitem"><span class="bullet" aria-hidden="true">🌱</span><div>I instill values about growing the mind and creating — not a boring lecturer.</div></div>
+      </div>
+
+      <div class="btns">
+        <a class="btn" href="https://wa.me/6282266443901" target="_blank" rel="noopener">Message on WhatsApp</a>
+        <a class="btn" href="https://t.me/gafrustam" target="_blank" rel="noopener" style="margin-left:8px">Message on Telegram</a>
+      </div>
+    </section>
+  </main>
+
+  <section class="container section" id="video">
+    <a class="video-card" href="https://youtube.com/shorts/E9YmdX8FW2U" target="_blank" rel="noopener" aria-label="Intro video">
+      <span class="video-play">▶</span>
+      <span>30‑second intro — watch the video</span>
+    </a>
+  </section>
+
+  <section class="container section" id="edu">
+    <div class="card panel">
+      <h2 style="margin-top:0">Education</h2>
+      <ul class="list muted">
+        <li>Kazan Federal University, CMC — BSc • 2008–2012</li>
+        <li>Yandex School of Data Analysis • 2014–2016</li>
+        <li>Innopolis University — MSc in Software Engineering • 2016–2017</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="container section" id="exp">
+    <div class="card panel">
+      <h2 style="margin-top:0">Experience</h2>
+      <ul class="list muted">
+        <li>MIPT — TA & lecturer (algorithms, C, C++) • 2013–2016</li>
+        <li>Innopolis University — Senior Lecturer, MSc Program Curator (Data Science) • 2017–2021</li>
+        <li>Yandex — Software Engineer • 2021–2022</li>
+        <li>KazanExpress / Magnit Market — Data Analyst • 2023–2024</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="container section" id="reviews">
+    <div class="card panel">
+      <h2 style="margin-top:0">Reviews</h2>
+      <div class="reviews">
+        <div class="review"><div class="who">Hasan • Java training • September 4, 2025</div><div class="stars">★★★★★</div><p class="muted">Excellent!</p></div>
+        <div class="review"><div class="who">Maria • C++/Swift • July 27, 2025</div><div class="stars">★★★★★</div><p class="muted">Doesn't give ready‑made answers — guides you to them. This approach worked perfectly for me.</p></div>
+        <div class="review"><div class="who">Sofia • Exam prep • June 29, 2025</div><div class="stars">★★★★★</div><p class="muted">A real expert: explains non‑obvious things so they become obvious.</p></div>
+        <div class="review"><div class="who">Nikita • Algorithms & DS • June 2, 2025</div><div class="stars">★★★★★</div><p class="muted">Prepared for interviews and felt confident after the first lesson. Very effective teaching.</p></div>
+        <div class="review"><div class="who">Elizaveta • Programming • March 27, 2025</div><div class="stars">★★★★★</div><p class="muted">Helped with a university algorithms course. Clear explanations and focus on understanding.</p></div>
+        <div class="review"><div class="who">Maxim • Programming • March 19, 2025</div><div class="stars">★★★★★</div><p class="muted">Top‑class specialist with excellent subject knowledge.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="card panel">
+      <h2 style="margin-top:0">How to start</h2>
+      <ol class="muted" style="margin:0; padding-left:18px">
+        <li>Text me on WhatsApp: <a href="https://wa.me/6282266443901" target="_blank" rel="noopener">+62 822‑6644‑3901</a> or on Telegram: <a href="https://t.me/gafrustam" target="_blank" rel="noopener">@gafrustam</a>.</li>
+        <li>We quickly discuss your goals and current level.</li>
+        <li>You get a plan and the first set of tasks — and we begin.</li>
+      </ol>
+    </div>
+  </section>
+
+  <footer class="container footer">
+    © <span id="y"></span> Rustam Gafarov · <a href="https://wa.me/6282266443901" target="_blank" rel="noopener">WhatsApp</a> · <a href="https://t.me/gafrustam" target="_blank" rel="noopener">Telegram</a>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
